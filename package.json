@@ -1,5 +1,5 @@
 {
-  "name": "rc-field-form",
+  "name": "rc-field-form-modern",
   "version": "2.2.1",
   "description": "React Form Component",
   "typings": "es/index.d.ts",
@@ -39,7 +39,6 @@
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "test": "rc-test",
     "test:coverage": "umi-test --coverage",
-    "prepublishOnly": "npm run compile && np --no-cleanup --yolo --no-publish",
     "lint": "eslint src/ --ext .tsx,.ts",
     "lint:tsc": "tsc -p tsconfig.json --noEmit",
     "now-build": "npm run docs:build"
@@ -50,8 +49,8 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.18.0",
-    "@rc-component/async-validator": "^5.0.3",
-    "rc-util": "^5.32.2"
+    "@rc-component/async-validator": "npm:rc-async-validator-modern@^5.0.3",
+    "rc-util": "npm:rc-util-modern@^5.32.2"
   },
   "devDependencies": {
     "@rc-component/father-plugin": "^1.0.0",
